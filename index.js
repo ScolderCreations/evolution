@@ -12,7 +12,7 @@ app.get('/style.css', (req, res) => {
   res.sendFile(__dirname + '/style.css')
 });
 
-app.get('/goose.jpeg', (req, res) => {
+app.get('/goose.jpg', (req, res) => {
   res.sendFile(__dirname + '/goose.jpeg')
 });
 
