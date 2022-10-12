@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: slategray;
+  padding: 0;
+  margin: 0;
+}
+canvas#example {
+  display: block;
+  max-height:100vh;
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
