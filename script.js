@@ -8,15 +8,10 @@ function drawGoose(options) {
   let ref = document.querySelector('img#goose');
   
   let ocanvas = document.querySelector('canvas#goose');
-  ocanvas.width = ref.naturalWidth/10;
-  ocanvas.height = ref.naturalHeight/10;
+  ocanvas.width = ref.naturalWidth;
+  ocanvas.height = ref.naturalHeight;
   let octx = ocanvas.getContext('2d');
   octx.clearRect(0, 0, ocanvas.width, ocanvas.height);
-  if (options != undefined) {
-    if (options.flip == true) {
-      octx.scale(-1,1);
-    }
-  }
   octx.drawImage(ref, 0, 0);
   return;
 }
