@@ -24,10 +24,11 @@ function render() {
   vars[0]+= (keys.d - keys.a) * 5;
   vars[1]+= vars[3]+(keys.s - keys.w) * 5;
   vars[3]+=0.1
+  if (vars[3] > 10) {vars[3] = 10}
   if (vars[0] > 960) { vars[2]-=960}
   if (vars[0] < 0) {vars[2]+=960}
   if (vars[1] > 600) {vars[1]-=600}
-  if (vars[1] < 0) {vars[3]+=600}
+  if (vars[1] < 0) {vars[1]+=600}
   goose = document.querySelector('canvas#goose');
   ctx.clearRect(0, 0, canvas.width, canvas.height)
   ctx.drawImage(goose, vars[0], vars[1]);
