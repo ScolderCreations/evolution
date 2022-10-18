@@ -23,7 +23,6 @@ drawGoose()
 function render() {
   vars[0]+= (keys.d - keys.a) * 5;
   vars[1]+= vars[3]+(keys.s - keys.w) * 5;
-  vars[3]+=0.1
   if (vars[3] > 10) {vars[3] = 10}
   if (vars[0] > 960) { vars[2]-=960}
   if (vars[0] < 0) {vars[2]+=960}
